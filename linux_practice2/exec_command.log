@@ -1,0 +1,38 @@
+    1  cd /root
+    2  mkdir server_lesson && cd server_lesson
+    3  yum update -y && yum -y install git
+    4  git version
+    5  git init
+    6  touch first.txt
+    7  mkdir linux_practice1 
+    8  cd linux_practice1 
+    9* 
+   10  cd public
+   11  touch index.php
+   12  ls
+   13  cp index.php index_bk.php
+   14  ls
+   15  cd ..
+   16  cp -r public tmp
+   17  ls
+   18  ls tmp
+   19  cd tmp
+   20  rm index_bk.php 
+   21  ls
+   22  cd ../../
+   23  mkdir linux_practice2
+   24  cd linux_practice2
+   25  mkdir documents && cd documents
+   26  touch gizumo{01..50}.md
+   27  ls
+   28  cd .
+   29  cd ..
+   30  mkdir trash
+   31  mv documets/gizumo{20..40}.md trash/
+   32  mv documents/gizumo{20..40}.md trash/
+   33  ls trash
+   34  touch .gitignore
+   35  ls
+   36  ls -a
+   37  vi .gitignore
+   38  history 300 > exec_command.log
